@@ -1,16 +1,18 @@
 #!/bin/bash
-# GitHub Setup Script
-# Replace YOUR_USERNAME with your actual GitHub username
+# Quick GitHub Push Script
+# Edit the GITHUB_USERNAME below with your actual username
 
-GITHUB_USERNAME="YOUR_USERNAME"
+GITHUB_USERNAME="YOUR_USERNAME_HERE"
 REPO_NAME="AstroAI"
 
-echo "Setting up GitHub remote..."
-git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
-
-echo "Pushing to GitHub..."
+echo "📦 Pushing to GitHub..."
+git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git 2>/dev/null || echo "Remote already exists"
 git branch -M main
 git push -u origin main
 
-echo "✅ Done! Your code is now on GitHub"
-echo "🚀 Next: Go to railway.app to deploy"
+echo ""
+echo "✅ Code pushed to GitHub!"
+echo "🔗 Repository: https://github.com/$GITHUB_USERNAME/$REPO_NAME"
+echo ""
+echo "🚀 Next step: Deploy on Render"
+echo "   Go to: https://dashboard.render.com/select-repo?type=web"
