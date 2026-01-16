@@ -1,77 +1,35 @@
-# Python
+# Ignore everything by default
+*
+
+# ! means "do not ignore" (whitelist)
+
+# --- Directories ---
+!chrome_extension/
+!keyez/
+!.github/
+!.do/
+
+# --- Extension & Backend Files ---
+!backend_api.py
+!requirements.txt
+!Procfile
+!render.yaml
+!build.sh
+!Dockerfile
+
+# --- Helper Scripts ---
+!push_to_github.sh
+!test_api.sh
+!test_render.sh
+!update_extension_url.sh
+
+# --- Configs ---
+!.gitignore
+!.dockerignore
+
+# --- Explicitly ignore specific junk within whitelisted folders if needed ---
+chrome_extension/*.bak
+chrome_extension/*.zip
+*.pyc
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual Environment
-venv/
-env/
-ENV/
-.venv
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-/media
-/staticfiles
-
-# Environment variables
-.env
-.env.local
-
-# Large model files (if any)
-*.bin
-*.model
-*.pkl
-
-# Test files
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Backup files
-*.bak
-
-# Jupyter Notebooks
-.ipynb_checkpoints
-
-# Data files (optional - uncomment if you don't want to commit large datasets)
-# *.csv
-# *.xlsx
-# *.json
+*.ds_store

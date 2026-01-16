@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.db.sqlite3
+venv/
+.env
+.env.*
+.git/
+.gitignore
+.idea/
+.vscode/
+node_modules/
+staticfiles/
+media/
+*.log
+.venv/
+# landing/model/ (removed to include weights)

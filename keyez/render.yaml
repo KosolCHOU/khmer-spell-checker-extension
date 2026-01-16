@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: keyez
+    runtime: docker
+    plan: standard
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        sync: false
