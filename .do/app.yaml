@@ -1,0 +1,18 @@
+name: khmer-spell-checker
+services:
+  - name: api
+    github:
+      repo: YOUR_USERNAME/YOUR_REPO
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    run_command: uvicorn backend_api:app --host 0.0.0.0 --port 8080
+    environment_slug: python
+    envs:
+      - key: PORT
+        value: "8080"
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /

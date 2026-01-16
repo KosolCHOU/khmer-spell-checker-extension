@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khmer Spell Checker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+  <div class="minimal-popup">
+    <div class="popup-header">
+      <div class="logo-group">
+        <div class="logo-icon-small">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background circle with gradient -->
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="16" cy="16" r="14" fill="url(#logoGradient)" opacity="0.15" />
+
+            <!-- Document shape -->
+            <path
+              d="M10 6C10 5.44772 10.4477 5 11 5H17L22 10V25C22 25.5523 21.5523 26 21 26H11C10.4477 26 10 25.5523 10 25V6Z"
+              stroke="currentColor" stroke-width="1.5" fill="none" />
+            <path d="M17 5V9C17 9.55228 17.4477 10 18 10H22" stroke="currentColor" stroke-width="1.5" fill="none" />
+
+            <!-- Khmer letter ក stylized -->
+            <text x="16" y="19" font-family="Khmer OS Battambang, Hanuman" font-size="10" fill="currentColor"
+              text-anchor="middle" font-weight="600">ក</text>
+
+            <!-- Checkmark badge -->
+            <circle cx="23" cy="23" r="4.5" fill="#10b981" stroke="#0f172a" stroke-width="1.5" />
+            <path d="M21 23L22.5 24.5L25 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" fill="none" />
+          </svg>
+        </div>
+        <span class="app-name">Khmer Spell Checker</span>
+      </div>
+    </div>
+
+    <div class="settings-list">
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-label">Enable Spell Checker</span>
+          <span class="setting-desc">Check spelling in real-time</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="enableToggle" checkedContent="true">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="setting-label">Theme</span>
+          <span class="setting-desc">Choose your preferred theme</span>
+        </div>
+        <select id="themeSelect" class="theme-select">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="auto">Auto (System)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="popup-footer">
+      <span id="versionTag">v2.3</span>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+
+</html>
