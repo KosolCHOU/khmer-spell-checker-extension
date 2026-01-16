@@ -1,35 +1,26 @@
-# Ignore everything by default
+# --- 1. Ignore EVERYTHING first ---
 *
 
-# ! means "do not ignore" (whitelist)
-
-# --- Directories ---
-!chrome_extension/
+# --- 2. Whitelist (Un-ignore) Directories ---
 !keyez/
-!.github/
+!chrome_extension/
 !.do/
 
-# --- Extension & Backend Files ---
+# --- 3. Whitelist Specific Files ---
 !backend_api.py
 !requirements.txt
-!Procfile
 !render.yaml
 !build.sh
+!Procfile
 !Dockerfile
-
-# --- Helper Scripts ---
 !push_to_github.sh
 !test_api.sh
 !test_render.sh
 !update_extension_url.sh
-
-# --- Configs ---
 !.gitignore
-!.dockerignore
 
-# --- Explicitly ignore specific junk within whitelisted folders if needed ---
+# --- 4. Ignore junk within whitelisted directories ---
+keyez/__pycache__
+keyez/*.pyc
 chrome_extension/*.bak
 chrome_extension/*.zip
-*.pyc
-__pycache__/
-*.ds_store

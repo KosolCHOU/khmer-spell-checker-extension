@@ -1,0 +1,66 @@
+/* Light Mode Navbar Enhancements */
+body[data-theme="light"] header {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom-color: rgba(148, 163, 184, 0.2) !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+/* Logo in light mode */
+body[data-theme="light"] header .text-cyan-400 {
+    color: #0891b2 !important;
+}
+
+body[data-theme="light"] header circle[fill="#84cc16"] {
+    fill: #65a30d !important;
+}
+
+/* Navigation links in light mode */
+body[data-theme="light"] header nav a {
+    color: #475569 !important;
+}
+
+body[data-theme="light"] header nav a:hover {
+    color: #0891b2 !important;
+}
+
+body[data-theme="light"] header nav a.text-white {
+    color: #0f172a !important;
+}
+
+body[data-theme="light"] header nav a.border-cyan-400 {
+    border-bottom-color: #0891b2 !important;
+}
+
+body[data-theme="light"] header nav a.text-slate-400 {
+    color: #64748b !important;
+}
+
+body[data-theme="light"] header nav a:hover.hover\:border-cyan-400\/50 {
+    border-bottom-color: rgba(8, 145, 178, 0.5) !important;
+}
+
+/* Buttons in light mode */
+body[data-theme="light"] header button {
+    background: rgba(241, 245, 249, 0.9) !important;
+    border-color: rgba(203, 213, 225, 0.6) !important;
+    color: #334155 !important;
+}
+
+body[data-theme="light"] header button:hover {
+    background: rgba(226, 232, 240, 0.95) !important;
+    border-color: rgba(148, 163, 184, 0.7) !important;
+}
+
+body[data-theme="light"] header button svg {
+    color: #475569 !important;
+}
+
+/* Hamburger menu in light mode */
+body[data-theme="light"] header #mobileMenuToggle {
+    color: #64748b !important;
+}
+
+body[data-theme="light"] header #mobileMenuToggle:hover {
+    color: #334155 !important;
+}

@@ -1,0 +1,198 @@
+/* Minimal Professional Landing Page - Spell Checker Style */
+
+/* Remove excessive animations and effects */
+[data-glow]::before,
+[data-glow]::after,
+.panel-stack::after,
+.floating-accent::after,
+.shine::after {
+    display: none !important;
+}
+
+/* Simplify hero section */
+#hero {
+    background: transparent;
+}
+
+#hero h1 {
+    text-shadow: none;
+    color: #f1f5f9;
+}
+
+#hero p {
+    color: #94a3b8;
+}
+
+/* Simple, clean buttons */
+.premium-cta-primary {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    box-shadow: none;
+    border: none;
+}
+
+.premium-cta-primary:hover {
+    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+    box-shadow: none;
+    transform: none;
+}
+
+.premium-cta-secondary {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: none;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.premium-cta-secondary:hover {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(148, 163, 184, 0.3);
+    transform: none;
+}
+
+/* Minimal feature cards */
+#features .card {
+    background: rgba(30, 41, 59, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    box-shadow: none;
+    transition: none;
+}
+
+#features .card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+#features .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+#features .card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #94a3b8;
+}
+
+/* Remove icon glow effects */
+.feature-icon {
+    box-shadow: none;
+}
+
+.card:hover .feature-icon {
+    box-shadow: none;
+    transform: none;
+}
+
+/* Simple social proof */
+.social-proof-badge {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: none;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    transition: none;
+}
+
+.social-proof-badge:hover {
+    background: rgba(30, 41, 59, 0.4);
+    border-color: rgba(148, 163, 184, 0.15);
+}
+
+/* Remove all animations */
+@keyframes fadeInUp {
+
+    from,
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-animate] {
+    animation: none;
+}
+
+.animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Light mode - clean and simple */
+body[data-theme="light"] #hero {
+    background: transparent;
+}
+
+body[data-theme="light"] #hero h1 {
+    text-shadow: none;
+    color: #0f172a;
+}
+
+body[data-theme="light"] #hero p {
+    color: #64748b;
+}
+
+body[data-theme="light"] .premium-cta-primary {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    box-shadow: none;
+}
+
+body[data-theme="light"] .premium-cta-secondary {
+    background: rgba(241, 245, 249, 0.8);
+    border-color: rgba(203, 213, 225, 0.4);
+    color: #0f172a;
+}
+
+body[data-theme="light"] .premium-cta-secondary:hover {
+    background: rgba(226, 232, 240, 0.9);
+    border-color: rgba(148, 163, 184, 0.5);
+}
+
+body[data-theme="light"] #features .card {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(203, 213, 225, 0.3);
+    box-shadow: none;
+}
+
+body[data-theme="light"] #features .card:hover {
+    box-shadow: none;
+    border-color: rgba(148, 163, 184, 0.4);
+}
+
+body[data-theme="light"] #features .card h3 {
+    color: #0f172a;
+}
+
+body[data-theme="light"] #features .card p {
+    color: #64748b;
+}
+
+body[data-theme="light"] .social-proof-badge {
+    background: rgba(248, 250, 252, 0.8);
+    border-color: rgba(203, 213, 225, 0.3);
+    color: #64748b;
+}
+
+/* Simplify gradients */
+.bg-gradient-to-r {
+    background: #06b6d4 !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+}
+
+/* Remove hover scale effects */
+.hover\:scale-105:hover,
+.hover\:scale-110:hover {
+    transform: none !important;
+}
+
+/* Clean, professional spacing */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}

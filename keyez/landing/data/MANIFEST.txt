@@ -1,0 +1,55 @@
+SPELL CHECKER DATA MANIFEST
+Generated: 2025-12-22
+
+STRUCTURE:
+==========
+landing/data/
+├── dictionaries/
+│   ├── khmer-dictionary-2022.parquet    (4.5 MB)
+│   ├── khmer_word_frequency.csv         (793 KB)
+│   └── names.txt                        (19 KB)
+├── models/
+│   └── word_segmentation_model.pt       (26 MB)
+└── ngrams/
+    └── mobile-keyboard-data.csv         (4.5 MB)
+
+TOTAL: 37 MB
+
+INTEGRATION:
+============
+Module: landing/spell_checker_advanced.py
+API Endpoint: /api/spell-check/ (POST)
+Frontend: spell-checker.v4.js
+
+FEATURES:
+=========
+✓ Dictionary validation (100k+ words)
+✓ Frequency-based ranking
+✓ Contextual n-gram checking
+✓ POS tagging support
+✓ Compound word validation
+✓ Proper noun recognition
+✓ Semantic context awareness
+
+PERFORMANCE:
+============
+Cold Start: ~5-10 seconds
+Per-Sentence: <100ms
+Memory: ~100 MB loaded
+Concurrency: Safe
+
+DOCUMENTATION:
+===============
+- README.md: Detailed data description
+- SPELL_CHECKER_SETUP.md: Implementation guide
+- spell_checker_advanced.py: Source code with docstrings
+
+SOURCES:
+========
+Dictionary: Khmer-Dictionary-2022
+Frequency: SeaLang corpus
+Names: khmerlbdict
+N-grams: KhmerLang mobile keyboard
+Models: KhmerNLP
+
+STATUS: ✓ READY TO USE

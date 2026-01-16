@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KeyEZ — SingKhmer ➜ Khmer Keyboard</title>
+  <meta name="description"
+    content="Type Singkhmer. Get Khmer. A futuristic AI keyboard that transliterates in real time — inspired by Pinyin, made for Khmer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@300;400;600;800;900&family=Merriweather:wght@300;400;700;900&family=Noto+Sans+Khmer:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="{% static 'landing/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/navbar-light.css' %}">
+  <link rel="stylesheet" href="{% static 'landing/minimal.css' %}">
+</head>
+
+<body data-theme="dark" data-lang="en" class="text-slate-200 antialiased">
+  {% include 'landing/navbar.html' %}
+
+  <section id="hero" class="relative pt-32 md:pt-40 pb-24 md:pb-32" data-glow>
+    <div class="mx-auto max-w-5xl px-6 md:px-8">
+      <div class="text-center" data-animate>
+        <!-- Main Heading -->
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-slate-100 mb-6">
+          <span class="block mb-2" data-lang-en="Write Khmer." data-lang-km="សរសេរខ្មែរ។">Write Khmer.</span>
+          <span class="block text-cyan-400" data-lang-en="Effortlessly."
+            data-lang-km="ដោយងាយស្រួល។">Effortlessly.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="mt-6 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed"
+          data-lang-en="Type naturally and watch your words transform into perfect Khmer script. Our AI catches spelling errors, fixes grammar mistakes, and helps you write with confidence — all in real time."
+          data-lang-km="វាយតាមធម្មជាតិ ហើយមើលពាក្យរបស់អ្នកប្រែក្លាយទៅជាអក្សរខ្មែរឥតខ្ចោះ។ AI របស់យើងរកឃើញកំហុសអក្ខរាវិរុទ្ធ កែកំហុសវេយ្យាករណ៍ និងជួយអ្នកសរសេរដោយទំនុកចិត្ត — ទាំងអស់នេះក្នុងពេលវេលាជាក់ស្តែង។">
+          Type naturally and watch your words transform into perfect Khmer script. Our AI catches spelling errors, fixes
+          grammar mistakes, and helps you write with confidence — all in real time.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="{% url 'spell_checker_page' %}"
+            class="premium-cta-primary w-full sm:w-auto px-8 py-4 rounded-xl text-white font-semibold text-lg transition-all duration-200"
+            data-lang-en="Try It Free" data-lang-km="សាកល្បងដោយឥតគិតថ្លៃ">
+            Try It Free
+          </a>
+
+          <a href="#features"
+            class="premium-cta-secondary w-full sm:w-auto px-8 py-4 rounded-xl text-slate-200 font-medium text-lg transition-all duration-200"
+            data-lang-en="See How It Works" data-lang-km="មើលរបៀបដំណើរការ">
+            See How It Works
+          </a>
+        </div>
+
+        <!-- Social Proof - Premium -->
+        <div class="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-slate-500">
+          <div class="social-proof-badge flex items-center gap-2 px-4 py-2 rounded-full">
+            <svg class="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <span data-lang-en="AI-Powered" data-lang-km="ដំណើរការដោយ AI">AI-Powered</span>
+          </div>
+          <div class="social-proof-badge flex items-center gap-2 px-4 py-2 rounded-full">
+            <svg class="w-5 h-5 text-lime-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span data-lang-en="Free to Use" data-lang-km="ឥតគិតថ្លៃ">Free to Use</span>
+          </div>
+          <div class="social-proof-badge flex items-center gap-2 px-4 py-2 rounded-full">
+            <svg class="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span data-lang-en="Privacy First" data-lang-km="ឯកជនភាពជាមុន">Privacy First</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FEATURES -->
+  <section id="features" class="py-28 md:py-36">
+    <div class="mx-auto max-w-5xl px-6 md:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center mb-24">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-light text-slate-100 leading-[1.15] tracking-tight">
+          <span data-lang-en="Write with confidence." data-lang-km="សរសេរដោយទំនុកចិត្ត។">Write with
+            confidence.</span>
+        </h2>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid md:grid-cols-3 gap-16 md:gap-20">
+
+        <!-- Feature 1 -->
+        <div class="group">
+          <div
+            class="mb-6 pb-6 border-b border-slate-800 group-hover:border-cyan-400/30 transition-colors duration-300">
+            <span
+              class="text-5xl font-extralight text-slate-700 group-hover:text-cyan-400 transition-colors duration-300">01</span>
+          </div>
+          <h3 class="text-xl font-normal text-slate-200 mb-4 tracking-tight" data-lang-en="Intelligent Input"
+            data-lang-km="បញ្ចូលឆ្លាតវៃ">Intelligent Input</h3>
+          <p class="text-slate-500 text-[15px] leading-relaxed"
+            data-lang-en="Type naturally in Latin script. Our AI understands your intent and transforms your words into polished Khmer — instantly."
+            data-lang-km="វាយតាមធម្មជាតិជាអក្សរឡាតាំង។ AI របស់យើងយល់ពីបំណងរបស់អ្នក ហើយប្រែក្លាយពាក្យរបស់អ្នកទៅជាខ្មែរល្អឥតខ្ចោះ — ភ្លាមៗ។">
+            Type naturally in Latin script. Our AI understands your intent and transforms your words into polished Khmer
+            — instantly.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="group">
+          <div
+            class="mb-6 pb-6 border-b border-slate-800 group-hover:border-cyan-400/30 transition-colors duration-300">
+            <span
+              class="text-5xl font-extralight text-slate-700 group-hover:text-cyan-400 transition-colors duration-300">02</span>
+          </div>
+          <h3 class="text-xl font-normal text-slate-200 mb-4 tracking-tight" data-lang-en="Spelling Accuracy"
+            data-lang-km="ភាពត្រឹមត្រូវនៃអក្ខរាវិរុទ្ធ">Spelling Accuracy</h3>
+          <p class="text-slate-500 text-[15px] leading-relaxed"
+            data-lang-en="Eliminate spelling errors before they reach your readers. Context-aware corrections ensure every word is exactly right."
+            data-lang-km="លុបបំបាត់កំហុសអក្ខរាវិរុទ្ធមុនពេលវាទៅដល់អ្នកអាន។ ការកែតម្រូវតាមបរិបទធានាថាពាក្យគ្រប់ពាក្យត្រឹមត្រូវ។">
+            Eliminate spelling errors before they reach your readers. Context-aware corrections ensure every word is
+            exactly right.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="group">
+          <div
+            class="mb-6 pb-6 border-b border-slate-800 group-hover:border-cyan-400/30 transition-colors duration-300">
+            <span
+              class="text-5xl font-extralight text-slate-700 group-hover:text-cyan-400 transition-colors duration-300">03</span>
+          </div>
+          <h3 class="text-xl font-normal text-slate-200 mb-4 tracking-tight" data-lang-en="Grammar Refinement"
+            data-lang-km="កែលម្អវេយ្យាករណ៍">Grammar Refinement</h3>
+          <p class="text-slate-500 text-[15px] leading-relaxed"
+            data-lang-en="Elevate your prose with proper Khmer grammar. Subtle corrections that preserve your voice while ensuring clarity."
+            data-lang-km="លើកកម្ពស់ការសរសេររបស់អ្នកជាមួយវេយ្យាករណ៍ខ្មែរត្រឹមត្រូវ។ ការកែតម្រូវដែលរក្សាសម្លេងរបស់អ្នកខណៈពេលធានាភាពច្បាស់លាស់។">
+            Elevate your prose with proper Khmer grammar. Subtle corrections that preserve your voice while ensuring
+            clarity.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12">
+    <div class="mx-auto max-w-5xl px-6 md:px-8">
+
+      <!-- Footer Content -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+        <!-- Logo & Info -->
+        <div class="flex items-center gap-4">
+          <!-- Logo matching header -->
+          <div class="relative w-12 h-12 flex items-center justify-center">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
+              <defs>
+                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <!-- Background circle with gradient -->
+              <circle cx="16" cy="16" r="14" fill="url(#footerLogoGradient)" opacity="0.15" />
+
+              <!-- Document shape -->
+              <path
+                d="M10 6C10 5.44772 10.4477 5 11 5H17L22 10V25C22 25.5523 21.5523 26 21 26H11C10.4477 26 10 25.5523 10 25V6Z"
+                stroke="currentColor" stroke-width="1.5" fill="none" class="text-cyan-400" />
+              <path d="M17 5V9C17 9.55228 17.4477 10 18 10H22" stroke="currentColor" stroke-width="1.5" fill="none"
+                class="text-cyan-400" />
+
+              <!-- Khmer letter ក -->
+              <text x="16" y="19" font-family="Battambang, Noto Sans Khmer" font-size="10" fill="currentColor"
+                text-anchor="middle" font-weight="600" class="text-cyan-400">ក</text>
+
+              <!-- Checkmark badge -->
+              <circle cx="23" cy="23" r="4.5" fill="#84cc16" />
+              <path d="M21 23L22.5 24.5L25 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+            </svg>
+          </div>
+
+          <div class="flex flex-col leading-tight">
+            <span class="font-black text-xl tracking-tight text-cyan-400">KeyEZ</span>
+            <span class="text-xs text-slate-500" data-lang-en="Write Khmer with confidence"
+              data-lang-km="សរសេរខ្មែរដោយទំនុកចិត្ត">Write Khmer with confidence</span>
+          </div>
+        </div>
+
+        <!-- Links & Copyright -->
+        <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-sm">
+          <a href="#" class="text-slate-400 hover:text-slate-200 transition-colors" data-lang-en="Privacy"
+            data-lang-km="ឯកជនភាព">Privacy</a>
+          <a href="#" class="text-slate-400 hover:text-slate-200 transition-colors" data-lang-en="Terms"
+            data-lang-km="លក្ខខណ្ឌ">Terms</a>
+          <a href="#" class="text-slate-400 hover:text-slate-200 transition-colors" data-lang-en="Contact"
+            data-lang-km="ទំនាក់ទំនង">Contact</a>
+          <span class="text-slate-500 text-xs">© <span id="y"></span> AstroAI</span>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="{% static 'landing/script.js' %}?v=2.0"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    container_name: keyez_web
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_SETTINGS_MODULE: keyez_site.settings
+      PYTHONUNBUFFERED: "1"
+    restart: unless-stopped
+    stop_grace_period: 30s
+    # Mount source for rapid local iteration; disable in production
+    volumes:
+      - .:/app
+    command: [ "gunicorn", "keyez_site.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "2", "--threads", "2", "--timeout", "120", "--preload" ]

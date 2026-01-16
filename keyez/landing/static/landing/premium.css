@@ -1,0 +1,175 @@
+/* Premium Landing Page Enhancements */
+
+/* Hero Section - Premium Spacing & Typography */
+#hero {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.15), transparent),
+        radial-gradient(ellipse 60% 50% at 50% 120%, rgba(132, 204, 22, 0.1), transparent);
+}
+
+#hero h1 {
+    letter-spacing: -0.03em;
+    text-shadow: 0 20px 60px rgba(6, 182, 212, 0.3);
+}
+
+#hero p {
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+
+/* Premium Button Styles */
+.premium-cta-primary {
+    position: relative;
+    background: linear-gradient(135deg, #06b6d4 0%, #84cc16 100%);
+    box-shadow: 0 20px 60px -15px rgba(6, 182, 212, 0.5),
+        0 10px 30px -10px rgba(132, 204, 22, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.premium-cta-primary:hover {
+    box-shadow: 0 25px 70px -15px rgba(6, 182, 212, 0.6),
+        0 15px 40px -10px rgba(132, 204, 22, 0.4);
+    transform: translateY(-2px);
+}
+
+.premium-cta-secondary {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.premium-cta-secondary:hover {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: rgba(148, 163, 184, 0.3);
+}
+
+/* Features Section - Premium Cards */
+#features .card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.3),
+        0 10px 30px -15px rgba(6, 182, 212, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#features .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.4),
+        0 20px 50px -15px rgba(6, 182, 212, 0.2);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+#features .card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+#features .card p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    font-weight: 300;
+    color: #cbd5e1;
+}
+
+/* Icon Containers - Premium Glow */
+.feature-icon {
+    box-shadow: 0 10px 40px -10px currentColor,
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover .feature-icon {
+    box-shadow: 0 15px 50px -10px currentColor,
+        0 0 0 1px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Social Proof Badges */
+.social-proof-badge {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    transition: all 0.3s ease;
+}
+
+.social-proof-badge:hover {
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+/* Light Mode Premium Adjustments */
+body[data-theme="light"] #hero {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.08), transparent),
+        radial-gradient(ellipse 60% 50% at 50% 120%, rgba(132, 204, 22, 0.06), transparent);
+}
+
+body[data-theme="light"] #hero h1 {
+    text-shadow: 0 20px 60px rgba(6, 182, 212, 0.15);
+    color: #0f172a !important;
+}
+
+body[data-theme="light"] #hero p {
+    color: #475569 !important;
+}
+
+body[data-theme="light"] .premium-cta-secondary {
+    background: rgba(241, 245, 249, 0.8);
+    border-color: rgba(203, 213, 225, 0.5);
+    color: #0f172a !important;
+}
+
+body[data-theme="light"] .premium-cta-secondary:hover {
+    background: rgba(226, 232, 240, 0.9);
+    border-color: rgba(148, 163, 184, 0.6);
+}
+
+body[data-theme="light"] #features .card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+    border-color: rgba(203, 213, 225, 0.4);
+    box-shadow: 0 20px 60px -20px rgba(15, 23, 42, 0.15),
+        0 10px 30px -15px rgba(6, 182, 212, 0.1);
+}
+
+body[data-theme="light"] #features .card:hover {
+    box-shadow: 0 30px 80px -20px rgba(15, 23, 42, 0.2),
+        0 20px 50px -15px rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.4);
+}
+
+body[data-theme="light"] #features .card p {
+    color: #64748b !important;
+}
+
+body[data-theme="light"] .social-proof-badge {
+    background: rgba(248, 250, 252, 0.8);
+    border-color: rgba(203, 213, 225, 0.4);
+    color: #64748b !important;
+}
+
+/* Typography Refinements */
+h2 {
+    letter-spacing: -0.025em;
+    font-weight: 800;
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-animate] {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Remove feature pills for cleaner look */
+.feature-pills {
+    display: none;
+}
