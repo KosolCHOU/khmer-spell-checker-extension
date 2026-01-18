@@ -8,11 +8,11 @@ body[data-theme="light"] header {
 
 /* Logo in light mode */
 body[data-theme="light"] header .text-cyan-400 {
-    color: #0891b2 !important;
+    color: #8b5cf6 !important;
 }
 
 body[data-theme="light"] header circle[fill="#84cc16"] {
-    fill: #65a30d !important;
+    fill: #a78bfa !important;
 }
 
 /* Navigation links in light mode */
@@ -21,7 +21,7 @@ body[data-theme="light"] header nav a {
 }
 
 body[data-theme="light"] header nav a:hover {
-    color: #0891b2 !important;
+    color: #8b5cf6 !important;
 }
 
 body[data-theme="light"] header nav a.text-white {
@@ -29,7 +29,7 @@ body[data-theme="light"] header nav a.text-white {
 }
 
 body[data-theme="light"] header nav a.border-cyan-400 {
-    border-bottom-color: #0891b2 !important;
+    border-bottom-color: #8b5cf6 !important;
 }
 
 body[data-theme="light"] header nav a.text-slate-400 {
@@ -37,7 +37,7 @@ body[data-theme="light"] header nav a.text-slate-400 {
 }
 
 body[data-theme="light"] header nav a:hover.hover\:border-cyan-400\/50 {
-    border-bottom-color: rgba(8, 145, 178, 0.5) !important;
+    border-bottom-color: rgba(139, 92, 246, 0.5) !important;
 }
 
 /* Buttons in light mode */

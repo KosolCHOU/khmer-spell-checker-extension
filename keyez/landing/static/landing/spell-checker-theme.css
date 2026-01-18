@@ -39,21 +39,21 @@ body[data-theme="light"] #editorEmptyState p {
 
 body[data-theme="light"] #editorEmptyState button,
 body[data-theme="light"] #editorEmptyState label {
-    border-color: rgba(16, 185, 129, 0.4) !important;
-    color: #059669 !important;
+    border-color: rgba(139, 92, 246, 0.4) !important;
+    color: #7c3aed !important;
 }
 
 body[data-theme="light"] #editorEmptyState button:hover,
 body[data-theme="light"] #editorEmptyState label:hover {
-    background: rgba(16, 185, 129, 0.1) !important;
+    background: rgba(139, 92, 246, 0.1) !important;
 }
 
 /* ===== Logo Text Gradient ===== */
 
 /* Light Mode Logo Text - Darker for visibility */
-body[data-theme="light"] header a span.text-cyan-400 {
-    color: #0e7490 !important;
-    /* cyan-700 */
+body[data-theme="light"] header a span.text-purple-400 {
+    color: #7c3aed !important;
+    /* purple-700 */
 }
 
 /* ===== Suggestions Panel ===== */

@@ -25,13 +25,13 @@
 
 /* Simple, clean buttons */
 .premium-cta-primary {
-    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
     box-shadow: none;
     border: none;
 }
 
 .premium-cta-primary:hover {
-    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
     box-shadow: none;
     transform: none;
 }
@@ -131,7 +131,7 @@ body[data-theme="light"] #hero p {
 }
 
 body[data-theme="light"] .premium-cta-primary {
-    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
     box-shadow: none;
 }
 
@@ -173,7 +173,7 @@ body[data-theme="light"] .social-proof-badge {
 
 /* Simplify gradients */
 .bg-gradient-to-r {
-    background: #06b6d4 !important;
+    background: #8b5cf6 !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
 }
